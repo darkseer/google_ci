@@ -33,7 +33,7 @@ public class GuestbookServlet extends HttpServlet {
       throws IOException {
     if (req.getParameter("testing") == null) {
       resp.setContentType("text/plain");
-      resp.getWriter().println("Hello, this is a testing servlet. \n\n");
+      resp.getWriter().println("Hello test1, this is a testing servlet. \n\n");
       Properties p = System.getProperties();
       p.list(resp.getWriter());
 
